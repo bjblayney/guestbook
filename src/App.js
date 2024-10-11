@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import VisitorCounter from './components/VisitorCounter';
+import Guestbook from './components/Guestbook';
+import './styles/main.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <h1>Welcome to the 80s Retro Site</h1>
       </header>
+      <VisitorCounter />
+      <Guestbook />
+      {/* Add more components as needed */}
     </div>
   );
 }
